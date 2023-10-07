@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*This root is for all the text on the homepage*/
+:root {
+    --home-page-text: #CACA3E;
+    --secondary-color: #CA3E3E;
+}
+/*This is for my name and the box surrounding it*/
+
+h1 {
+    font-size: 60px; 
+    color: var(--home-page-text); 
+    font-family:serif;
+    font-weight: bold; 
+    margin-top: 0; 
+    padding: 10px;
+    top: 26%; 
+    left: 4%; 
+    border: 3px solid var(--home-page-text);
+    border-radius: 8px;
+    position: absolute;
+ }
+
+/* Hello my name is... */
+h2 {
+    font-size: 36px;
+    color: var(--home-page-text);
+    font-family: monospace;
+    font-weight: lighter;
+    margin-top: 0;
+    top:15%;
+    left:2%;
+  position: absolute;
+}
+
+/*The paragraph desribing my bio. */
+.block-paragraph {
+color:var(--home-page-text);
+font-family: monospace;
+font-size: 24px;
+width: 310px;
+text-align:justify; 
+word-break:break-word;
+margin-top: 350px;
+margin-left: 130px;
+position: absolute;
+}
+
+/* All top-list element are for the links at the top right of the home page */
+.top-list {
+    list-style-type: none;
+    margin-top: 850px ;
+    margin-left: 1100px;
+    text-align: right;
+    position: fixed;
+    top: 0;
+    width: 40%;
+    height: 5%;   
+}
+.top-list li {
+    display: inline-block;
+    margin-right: 65px; 
+    padding-left: 5px; 
+  
+}
+.top-list a {
+    text-decoration: none;
+    color: var(--home-page-text);
+    font-size: 28px;
+    padding-right: 25px;
+    font-family: monospace; 
+}
+.top-list a:hover {
+    text-decoration: underline;  
+    box-shadow: 0 0 10px (var(--home-page-text)); 
+}
+
+
+/*This is for the .png photo of myself*/
+.card img {
+    margin-top: 110px;
+    margin-left: 475px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    height: 850px;
+    position: fixed;
+}
+.background img {
+    padding-bottom: 0px;
+    height: 900px;
+    margin: 0;
+    margin-bottom: -35px;
+    position: fixed;
+}
+
+@media screen and (max-width: 992px) {
+    .background img {
+        border-bottom: 10px solid var(--secondary-color);
+    }
+    h1 {
+        top:25%; /* Adjust the top value for smaller screens */
+        left: 10%;
+        color: var(--home-page-text);
+}
+    .card img {
+      left: -5%; 
+      height: 75%; 
+      top:25%;
+    }
+}
+
+ @media screen and (max-width: 768px) {
+    .background img {
+        border-bottom: 4px solid var(--secondary-color) ;
+    }
+    .h2 {
+        top: 15%; /* Adjust the top value for smaller screens */
+        left: 5%; /* Adjust the left value for smaller screens */
+    }
+h1 {
+    color: var(--home-page-text);
+    top: 26%; /* Adjust the top value for smaller screens */
+    left: 10%; /* Adjust the left value for smaller screens */ 
+    display: flex; 
+    flex-direction:row;
+}
+.card img {
+    left: -40%; 
+    height: 75%; 
+    top:50%;
+  }
+    }
+
