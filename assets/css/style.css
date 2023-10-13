@@ -38,7 +38,7 @@ h2 {
 }
 
 /*The paragraph desribing my bio. */
-.block-paragraph {
+#section3 {
 color:var(--home-page-text);
 font-family: monospace;
 font-size: 24px;
@@ -96,6 +96,10 @@ position: absolute;
     margin-bottom: -35px;
     position: fixed;
 }
+
+.footer
+
+
 
 @media screen and (max-width: 992px) {
     .background img {
