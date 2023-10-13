@@ -1,4 +1,4 @@
-* {
+ * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -6,8 +6,8 @@
 
 /*This root is for all the text on the homepage*/
 :root {
-    --home-page-text: #CACA3E;
-    --secondary-color: #CA3E3E;
+    --home-page-text:black;
+    --secondary-color:black;
 }
 /*This is for my name and the box surrounding it*/
 
@@ -23,10 +23,12 @@ h1 {
     border: 3px solid var(--home-page-text);
     border-radius: 8px;
     position: absolute;
+
  }
 
 /* Hello my name is... */
 h2 {
+    color:var()
     font-size: 36px;
     color: var(--home-page-text);
     font-family: monospace;
@@ -37,11 +39,16 @@ h2 {
   position: absolute;
 }
 
+.first-background {
+    background-color: black;
+    height: 50%;
+}
+
 /*The paragraph desribing my bio. */
 #section3 {
 color:var(--home-page-text);
 font-family: monospace;
-font-size: 24px;
+font-size: 50px;
 width: 310px;
 text-align:justify; 
 word-break:break-word;
@@ -53,7 +60,7 @@ position: absolute;
 /* All top-list element are for the links at the top right of the home page */
 .top-list {
     list-style-type: none;
-    margin-top: 850px ;
+    margin-top: 75px ;
     margin-left: 1100px;
     text-align: right;
     position: fixed;
@@ -82,16 +89,13 @@ position: absolute;
 
 /*This is for the .png photo of myself*/
 .card img {
-    margin-top: 110px;
-    margin-left: 475px;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-    height: 850px;
-    position: fixed;
+width: 25%;
+
 }
+
 .background img {
     padding-bottom: 0px;
-    height: 900px;
+    height: 250px;
     margin: 0;
     margin-bottom: -35px;
     position: fixed;
