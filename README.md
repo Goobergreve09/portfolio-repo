@@ -1,6 +1,6 @@
 # portfolio-repo
 # Description
-This is a portfolio created with muliple work samples in hopes that a future employer likes what they see.
+This is a portfolio created with multiple work samples in hopes that a future employer likes what they see.
 Included is an about me section with a photo of myself, contact information, and projects I  have worked on.
 When a link is clicked he UI scrolls to the corresponding place on the page. The first application is larger than the others'.
 Although I have yet to create an application so clicking these will lead to no where. When the page is resized 
