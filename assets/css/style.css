@@ -1,4 +1,4 @@
- * {
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -6,67 +6,63 @@
 
 /*This root is for all the text on the homepage*/
 :root {
-    --home-page-text:black;
-    --secondary-color:black;
+    --secondary-color:#FCF3CF;
+    --font-1:#FEF9E7;
+    --primary-color:#212F3C;
 }
-/*This is for my name and the box surrounding it*/
 
+/*I'm Greg and I'm a Web-Developer*/
 h1 {
     font-size: 60px; 
-    color: var(--home-page-text); 
+    color: var(--font-1); 
     font-family:serif;
     font-weight: bold; 
-    margin-top: 0; 
+    margin-top: -500px;
+    margin-left: 100px; 
     padding: 10px;
-    top: 26%; 
-    left: 4%; 
-    border: 3px solid var(--home-page-text);
-    border-radius: 8px;
-    position: absolute;
-
- }
+}
+/* <head> */
+.headinside{
+    color: #F9E79F;
+    display: inline-block;
+    font-weight: lighter;
+    font-family: 'Times New Roman', Times, serif;
+}
 
 /* Hello my name is... */
 h2 {
-    color:var()
+    color: var(--font-1);
     font-size: 36px;
-    color: var(--home-page-text);
-    font-family: monospace;
     font-weight: lighter;
-    margin-top: 0;
-    top:15%;
-    left:2%;
-  position: absolute;
+    font-family: serif;
+    margin-top: -150px;
+    margin-left: 300px;
+   
+}
+
+.signature img {
+    width:400px;
+    margin-left: 350px;
+    margin-top: 75px;
+    opacity: 75%;
+    
 }
 
 .first-background {
-    background-color: black;
-    height: 50%;
-}
-
-/*The paragraph desribing my bio. */
-#section3 {
-color:var(--home-page-text);
-font-family: monospace;
-font-size: 50px;
-width: 310px;
-text-align:justify; 
-word-break:break-word;
-margin-top: 350px;
-margin-left: 130px;
-position: absolute;
+    background-color: var(--primary-color);
+    padding-top: 650px;
 }
 
 /* All top-list element are for the links at the top right of the home page */
 .top-list {
     list-style-type: none;
-    margin-top: 75px ;
+    margin-top: 0px ;
     margin-left: 1100px;
     text-align: right;
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 40%;
-    height: 5%;   
+    height: 0%;   
 }
 .top-list li {
     display: inline-block;
@@ -76,71 +72,297 @@ position: absolute;
 }
 .top-list a {
     text-decoration: none;
-    color: var(--home-page-text);
+    color: var(--font-1);
     font-size: 28px;
     padding-right: 25px;
-    font-family: monospace; 
+    font-family: serif; 
 }
 .top-list a:hover {
     text-decoration: underline;  
-    box-shadow: 0 0 10px (var(--home-page-text)); 
 }
 
-
-/*This is for the .png photo of myself*/
+/* About Me section */
 .card img {
-width: 25%;
-
+    height: 500px;
+    margin-left: 1400px;
+    margin-top:-350px;
+}
+#section3 {
+    background-color: #FEF9E7;
+    padding-bottom: 50px;
 }
 
-.background img {
-    padding-bottom: 0px;
-    height: 250px;
-    margin: 0;
-    margin-bottom: -35px;
-    position: fixed;
+#section3 p {
+font-size: 32px;
+color: var(--primary-color);
+text-align:justify; 
+word-break:break-word; /*breaks up the paragraph lines */
+width: 600px;
+}
+.p1 {
+    margin-left: 400px;
+    padding-top: 50px ;   
 }
 
-.footer
-
-
-
-@media screen and (max-width: 992px) {
-    .background img {
-        border-bottom: 10px solid var(--secondary-color);
-    }
-    h1 {
-        top:25%; 
-        left: 10%;
-        color: var(--home-page-text);
-}
-    .card img {
-      left: -5%; 
-      height: 75%; 
-      top:25%;
-    }
+.p2 {
+    margin-left: 400px;
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
 
-/*fitting sizes for tablet and cell phone resolutions*/
- @media screen and (max-width: 768px) {
-    .background img {
-        border-bottom: 4px solid var(--secondary-color) ;
-    }
-    .h2 {
-        top: 15%; 
-        left: 5%; 
-    }
-h1 {
-    color: var(--home-page-text);
-    top: 26%; 
-    left: 10%; 
-    display: flex; 
-    flex-direction:row;
+/*projects and clickable boxes section */
+.projects {
+    background-color: var(--primary-color);
+    padding-top: 750px;
+    padding-bottom:100px;
 }
-.card img {
-    left: -40%; 
-    height: 75%; 
-    top:50%;
+  
+.clickable-box1 {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    width: 500px; 
+    margin-top: -600px;
+    margin-left: 300px;
+    margin-bottom: 800px;
+    
   }
-    }
+  
+  
+  .clickable-box1 h3 {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--font-1);
+  }
 
+  .clickable-box2 {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    width: 400px;
+    margin: 10px; 
+    margin-left: 900px;
+    margin-top: -1500px;
+  }
+  
+  .clickable-box2 a, .clickable-box3 a,.clickable-box1 a  {
+    text-decoration: none;
+    color: #333;
+    display: block; 
+  }
+  
+  .clickable-box2 img, .clickable-box1 img, .clickable-box3 img  {
+    max-width: 100%;
+    height: auto;
+
+  }
+  
+  .clickable-box2 h4, .clickable-box3 h4 {
+    color:var(--font-1)
+  }
+  .clickable-box3 {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    width: 400px; 
+    margin: 10px; 
+    margin-left: 900px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+  }
+  /* Contact Information*/
+  
+#section1{
+    background-color: var(--font-1);
+    padding-top: 129px;
+    display: block;
+    text-align: center;
+}
+  #section1 ul{
+    text-align: center;
+
+  }
+  #section1 ul li{
+    font-size: 32px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--primary-color);
+    display: inline-block;
+    padding-right:50px;
+    margin-bottom: 75px;
+  }
+
+  @media screen and (max-width:992px) {
+
+    h1 {
+      font-size: 45px;
+      margin-left: 75px;
+      margin-top: -450px;
+    }
+    h2 {
+      font-size: 32px;
+      margin-left:200px;
+      margin-top: -500px;
+    }
+    .signature img {
+      width: 400px;
+      margin-left: 300px;
+      margin-top: -1250px;
+    
+    }
+    .top-list {
+      margin-top: 10px ;
+      margin-left: 200px;
+      display: flex;
+      flex-wrap: nowrap;   
+  }
+  .top-list a {
+    font-size: 28px;
+    padding-right: 10px;
+    padding-left: 25px;
+    font-family: serif; 
+  
+}
+  .top-list li {
+display: inline-block; 
+}
+.first-background {
+  display: flex;
+  flex-wrap: wrap;
+}
+  .p1 {
+    margin-left: 100px;
+    padding-top: 50px ;   
+}
+
+.p2 {
+    margin-left: 100px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.card img {
+  display: none;
+}
+
+.clickable-box1 {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  width: 300px; 
+  margin-top: -600px; 
+  margin-left: 100px;
+  margin-bottom: 800px;
+  
+}
+
+.clickable-box2 {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  width: 300px; 
+  margin: 10px; 
+  margin-left: 500px;
+  margin-top: -1300px;
+}
+.clickable-box3 {
+border: 1px solid #ccc;
+padding: 10px;
+text-align: center;
+width: 300px; 
+margin: 10px; 
+margin-left: 500px;
+margin-top: 50px;
+}
+#section1 ul li{
+  font-size: 32px;
+  padding-right:50px;
+  margin-bottom: 75px;
+}
+
+  }
+  
+  @media screen and (max-width:768px) {
+    h1 {
+      font-size: 45px;
+      margin-left: 75px;
+      margin-top: -450px;
+    }
+    h2 {
+      font-size: 32px;
+      margin-left:100px;
+      margin-top: -500px;
+    }
+    .signature img {
+      width: 400px;
+      margin-left: 100px;
+      margin-top: -1250px;
+    
+    }
+    .top-list {
+      margin-top: 10px ;
+      margin-left: 50px;
+      display: flex;    
+  }
+  .top-list a {
+    font-size: 28px;
+    padding-right: 10px;
+    padding-left: 25px;
+  
+}
+  .top-list li {
+display: inline-block;
+  }
+  .p1 {
+    margin-left: 50px;
+    padding-top: 50px ;  
+}
+
+.p2 {
+    margin-left: 50px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+#section3 p {
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  }
+  #section3 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.clickable-box1 {
+  width: 200px;
+  margin-top: -200px; 
+  margin-left: 50px;
+  
+}
+
+.clickable-box2 {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  width: 200px; 
+  margin: 10px; 
+  margin-left: 300px;
+  margin-top: -1150px;
+}
+.clickable-box3 {
+border: 1px solid #ccc;
+padding: 10px;
+text-align: center;
+width: 200px;
+margin: 10px; 
+margin-left: 300px;
+margin-top: 100px;
+}
+.projects {
+  padding-top: 300px;
+  padding-bottom:100px;
+}
+#section1 ul li{
+  font-size: 32px;
+  padding-right:50px;
+  margin-bottom: 75px;
+  margin-left: 25px;
+}
+  }
