@@ -1,83 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Descriptive title of the page-->
     <title>Greg Greve Web Development</title>
-    <link rel="stylesheet" href="https://goobergreve09.github.io/portfolio-repo/assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets\css\style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Spice&family=Kaushan+Script&family=Zeyada&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Spice&family=Josefin+Sans&family=Kaushan+Script&family=Zeyada&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Spice&family=DM+Serif+Display:ital@1&family=Josefin+Sans:ital,wght@0,400;1,300&family=Kaushan+Script&family=Zeyada&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Spice&family=Cormorant+Garamond:wght@300&family=DM+Serif+Display:ital@1&family=Josefin+Sans:ital,wght@0,400;1,300&family=Kaushan+Script&family=Zeyada&display=swap" rel="stylesheet">
 </head>
 
 <body>
- 
+
     <header>
-        <section class = "first-background">
-            <h1>I'm Greg, and I'm a Web Developer.</h1>
-        
+        <div class="container-fluid">
+            <div class="row">
+              <nav class="col-md-2 d-none d-md-block  sidebar">
+                <div class="position-sticky">
+                  <ul class="nav flex-column">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#">
+                        <img src="images\kj..png" alt="Logo" width="40" height="auto" class="d-inline-block align-text-top">
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#section2">
+                         <!-- <span id = li-bp>&lt;li&gt;</span> -->
+                          Work
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#section1">
+                         <!-- <span id = li-bp>&lt;li&gt;</span> -->
+                            Let's Talk 
+                      </a>
+                    </li>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#section3">
+                     <!-- <span id = li-bp>&lt;li&gt;</span>  -->
+                        Who Am I?
+                  </a>
+                </li>
+                    <!-- Add more menu items as needed -->
+                  </ul>
+    
+                </div>
+              </nav>
+              <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <!-- Main content goes here -->
+              </main>
+            </div>
+          </div>
+        <section class="first-background">
+            <div id="hero">
+                <h2>
+                    <section class="headinside"></section>Hello World.<section class="headinside">
+                        </section>
+                </h2>
+                <h1>I'm <span id="Greg">Greg,</span> and I'm a Web Developer.</h1>
+
+
+                <!-- <section class="signature">
+                    <img src="https://goobergreve09.github.io/portfolio-repo/images/Greg-Greve-white-high-res.png"
+                        alt="Signature">
+                </section> -->
+                <p>UI-UX</p>
+            </div>
+            <div id="nav">
                 <ul class="top-list">
-                    <li><a href="#section1">Contact</a></li>
+                    <li><a href="#section1">Contact Me</a></li>
                     <li><a href="#section2">Portfolio</a></li>
                     <li><a href="#section3">About Me</a></li>
                 </ul>
-        
-            <h2><section class ="headinside">&lt;head&gt;</section>Hello and Welcome!<section class ="headinside">&lt;/head&gt;</section></h2>
-        <section class="signature">
-            <img src="https://goobergreve09.github.io/portfolio-repo/images/Greg-Greve-white-high-res.png" alt="Signature">
+            </div>
+           
+
         </section>
-    </section>
-    </header> 
-<main>
-    <!--This paragraph is my homepage bio-->
-    <section id="section3">
-            <section class = "p1">
-                <p>I am a 29 year old aspiring web-developer from Grand Rapds, Michigan.</p>
+    </header>
+    <main>
+        <!--This paragraph is my homepage bio-->
+        <section id="section3">
+            <div class="About-me">
+                <h1>Hey <span id ="pink">Again!</span></h1>
+                <h2>This is who I am && what I do.</h2>
+            </div>
+            <div id="bio" class="flex-container">
+              <section class="p1">
+                <p>I am a 29-year-old aspiring web developer from Grand Rapids, Michigan. When I am not creating accessible and user-friendly websites I am likely outdoors hiking, doing landscape photography, or finding a nice place to hammock.</p>
+              </section>
+              <section class="p2">
+                <p>I work with HTML, CSS, Bootstrap, JavaScript, and jquery. I am also adept in Adobe Photoshop and Adobe Lightroom. My goal is to create a website that best meets both you and your user needs. I use clean code and prioritize accessibility.</p>
+              <div id = 'signature'>
+                <img src = "images\Greg-Greve-white-high-res.png" alt = "signature">
+                </div>
             </section>
-            <section class="p2">
-                <p>I work with HTML, CSS, Javascript. My goal is to create a website that best meets both yours and your user needs.</p>
-            </section>    
-            <section class="card">
-                <!--I own the rights to this photo; it is an image of me captured by me-->
-                <img src="https://goobergreve09.github.io/portfolio-repo/images/850_9486.jpg" alt="An image of the developer" />
-            </section>
-    </section>
-    <section id="section2">
+            </div>
+            <div id ="cardcont">
+                    <div class="profile-picture">
+                        <img src="C:\Users\Greg\bootcamp\portfolio-repo\images\20221028_060531.jpg" alt="Profile Picture">
+                    </div>
+                    <div class="profile-info">
+                        <h2>Gregory M. Greve</h2>
+                        <h3>Full Stack Web-Developer</h3>
+                        </p>
+                        <div class="social-media">
+                            <a href="https://www.facebook.com/greg.greve.79"><img src="C:\Users\Greg\bootcamp\portfolio-repo\images\607478_facebook_4096x4096p.png" alt="Facebook Logo"></a>
+                            <a href="https://www.linkedin.com/in/the-chill-hypomaniac-9735a6297/"><img src="images/606885_linkedin_2048x2048.png" alt="LinkedIn Logo"></a>
+                            <a href="https://github.com/Goobergreve09"><img src="C:\Users\Greg\bootcamp\portfolio-repo\images\github_PNG53.png" alt="Github Logo"></a>
+                        </div>
+                        <div id="resume">
+                        <h4>Resume</h4>
+                        </div>
+                    </div>
+                </div>
+          </section>
+        
+        <section id="section2">
             <nav>
                 <section class="projects">
                     <section class="clickable box">
-                    <section class="clickable-box1">
-                        <a href="link">
-                          <img src="https://goobergreve09.github.io/portfolio-repo/images/pexels-junior-teixeira-2047905.jpg" alt="an image of a laptop">
-                          <h3>My First Project</h3>
-                        </a>
-                    </section>
-                    <section class="clickable-box2">
-                        <a href="link">
-                          <img src="https://goobergreve09.github.io/portfolio-repo/images/pexels-abet-llacer-919734.jpg" alt="Image Description">
-                          <h4>Project 1</h4>
-                        </a>
-                    </section>
-                    <section class="clickable-box3">
-                        <a href="link">
-                          <img src="https://goobergreve09.github.io/portfolio-repo/images/pexels-pixabay-417458.jpg" alt="Image Description">
-                          <h4>Project 2</h4>
-                        </a>
-                    </section>
+                        <section class="clickable-box1">
+                            <a href="link">
+                                <img src="https://goobergreve09.github.io/portfolio-repo/images/pexels-junior-teixeira-2047905.jpg"
+                                    alt="an image of a laptop">
+                                <h3>My First Project</h3>
+                            </a>
+                        </section>
+                        <section class="clickable-box2">
+                            <a href="https://goobergreve09.github.io/js-password-generate/">
+                                <img src="C:\Users\Greg\bootcamp\portfolio-repo\images\PW-generator-img.JPG"
+                                    alt="Screenshot of application homepage">
+                                <h4>Password Generator</h4>
+                            </a>
+                        </section>
+                        <section class="clickable-box3">
+                            <a href="https://goobergreve09.github.io/js-javascript-quiz/">
+                                <img src="images\Capture.JPG"
+                                    alt="Screenshot of application homepage">
+                                <h4>Javascript Quiz</h4>
+                            </a>
+                        </section>
                     </section>
                 </section>
-            </nav> 
-    </section>
-    <section id="section1">
-        <nav>
-            <ul class = "contact.info">
-                <li>Phone: 1.231.740.1594</li>
-                <li>Email: gregory.greve@yahoo.com</li>
-                <li a href="https://github.com/Goobergreve09">Github</li>
-            </ul>
-        </nav>
-    </section>
-</main>
+            </nav>
+        </section>
+        <section id="section1">
+            <nav>
+                <ul class="contact.info">
+                    <li>Phone: 1.231.740.1594</li>
+                    <li>Email: gregory.greve@yahoo.com</li>
+                    <li a href="https://github.com/Goobergreve09">Github</li>
+                </ul>
+            </nav>
+        </section>
+    </main>
 
-    <footer>       
+    <footer>
     </footer>
 </body>
+
 </html>
