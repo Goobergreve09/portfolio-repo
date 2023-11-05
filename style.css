@@ -48,6 +48,8 @@
   font-weight: bold;
 }
 
+
+
 /* #li-bp {
 font-size: 12px;
 font-weight: lighter;
@@ -242,7 +244,7 @@ h1 {
   justify-content: center;
   align-items: center;
 }
-h4 {
+#resume h4 {
   text-align: center;
   border: 2px solid var(--text);
   padding: 15px;
@@ -255,7 +257,7 @@ h4 {
   font-family: "Josefin Sans", sans-serif;
 }
 
-h4:hover {
+#resume h4:hover {
   background-color: var(--ascent);
   color: var(--text);
   border: 2px solid var(--ascent);
